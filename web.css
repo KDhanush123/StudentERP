@@ -1,0 +1,168 @@
+   /*BODY*/
+   #b
+   {
+   background-image: url(images/webback1.jpg);  
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   padding: 0%;
+   margin: 0%;
+   }
+   /*HEADER*/
+   header{
+    background-color: #B3E5BE;
+    height: 50px;
+    padding: 50px;
+    }
+    /*Welcome text */
+    h1{
+
+        color:blueviolet;
+        text-shadow:1px 1px 1px white,1px 1px 2px white;
+        text-size-adjust: 500px;
+        }
+        #hb0
+        {
+            float: left;
+            font-size:large;
+            text-shadow:1px 1px 1px white,1px 1px 2px white;
+        }
+    /* welocme text style */
+    #hb1
+    {   
+        width: 150px;
+        height: 40px;
+        border: 2px solid black;
+        border-radius:10px;
+        background-color: aquamarine; 
+        font-size: xx-large;
+        float: right;
+        text-shadow:1px 1px 1px white,1px 1px 2px white;
+
+
+    }
+    /* logout*/
+    #hb
+    {
+        display: grid;
+        grid-template-columns: 90% 10%;
+    }
+/* header navigation buttons */
+    #hum
+    {
+    float: right;
+    text-align: center;
+    }
+
+/*DETAILS*/
+    #t
+    {
+        background-color: #DADDB1;
+    }
+    .t1
+    {
+        display: grid;
+        grid-template-columns: 50% 30%;
+        padding: 10px;
+        text-align: center;
+        color: rgb(147, 18, 117);
+        text-shadow:1px 1px 1px white,1px 1px 2px white;
+        font-family: 'EB Garamond', serif;
+        font-family: 'Libre Baskerville', serif;
+    }
+/*INPUT BOXES NAMES*/
+   #names1,#names2,#names3
+    {
+        border: 2px solid black;
+        max-width: 200px;
+        font-family: 'EB Garamond', serif;
+        font-family: 'Libre Baskerville', serif;
+        border-radius: 10px;
+
+    }
+    /*PROFILE PIC*/
+    img{
+        float: right;
+            border: 3px solid rebeccapurple;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+        }
+    /*DISPLAY DETAILS*/
+    #t2,#t3,#t4
+    {
+        border: 1px solid black;
+        display:grid;
+        grid-template-columns: 80% 20%;
+        background-color: #D6C7AE;
+        font-family: 'EB Garamond', serif;
+        font-family: 'Libre Baskerville', serif;
+
+    }
+    /*DISPLAY*/
+    #c1,#c2,#c3
+    {
+        background-color: #ABC4AA;
+        font-family: 'EB Garamond', serif;
+        font-family: 'Libre Baskerville', serif;
+    }
+    #c3
+    {
+        height: 500px;
+    }
+/*ACHIVEMENTS IMAGE AND TEXT*/
+    #i2
+    {
+    width:500px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 500px;
+    margin-top: 10px;
+    }
+    #output1
+    {
+        text-align: center;
+        margin-top: 10px;
+    }  
+/*FOOTER*/ 
+    footer
+    {
+        text-align: left;
+        margin: 0px;
+        height: 50px;
+        background-color: #B99470;
+        height: 200px;
+    }
+/* FOOTER IMAGES*/
+    #f
+    {
+        float: left;
+    }
+    .src
+    {
+        margin: 5px;
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+    }
+/*FOOTER CONTENT*/
+    #f1
+    {
+        float: right;
+        font-family: 'EB Garamond', serif;
+        font-family: 'Libre Baskerville', serif;
+        color: red;
+        margin-right: 500px;
+        font-size: 20px;
+        font-family: 'Libre Baskerville', serif;
+
+    }
+    #f0
+    {
+        margin-left:50px;
+        color:black;
+        font-family: 'EB Garamond', serif;
+        font-family: 'Libre Baskerville', serif;
+        text-shadow:1px 1px 1px white,1px 1px 2px white;
+    }

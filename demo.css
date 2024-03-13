@@ -1,0 +1,65 @@
+        #t
+        {
+            margin: 25%;
+            margin-top: 20%;
+            background-color: rgb(127, 163, 255);
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 2%;
+        }
+        #t1,#t2
+        {
+            max-width: 500%;
+            max-height: 60%;
+            margin-top: 15px; 
+            font-family: 'Libre Baskerville', serif;
+        }
+        div{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        #h
+        {
+        background-color:rgb(126, 42, 165);
+        border: 2px solid black;
+        border-radius: 15px;
+        
+        }
+        #t5
+        {
+            margin: 10px;
+            float: right;
+        }
+        #t4{
+            border: 3px solid red;
+            box-sizing: border-box;
+        }
+        #b
+        {
+        background-image:url(images/ENTRY.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+        background-attachment: fixed;
+        }
+        input
+        {
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+        .k
+        { text-align:center;
+            text-align: justify;
+            color: aquamarine;
+            text-shadow:2px 2px 2px black,2px 2px 2px black;
+        }
+        button
+        {
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: rgb(231, 134, 240);
+            color: black;
+            font-family: 'Libre Baskerville', serif;
+        }
+    

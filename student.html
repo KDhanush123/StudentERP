@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STUDENT DETAILS</title>
+    <link rel="stylesheet" href="web.css" class="css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body id="b">
+    <header>
+        <div id="hb"><center><h1><p id="hb0"></p><h1 style="color: black;text-shadow:1px 1px 1px white,1px 1px 2px white;">STUDENT PROFILE<span style="float: right;"> <button id="hb1" onclick="return display5()"> logout</button></span></h1></div>
+        <div id="hum"><button><a href="#t">DETAILS</a></button > <button><a href="#c1">ATTANDANCE</a></button> <button><a href="#c2">MARKS</a></button> <button><a href="#c3">ACHIEVEMENTS</a></button></div>
+    </header>
+<main>
+  <div id="t">
+      <img src="images/images.jpg" id="i1">
+      <div class="t1"><h3>STUDENT NAME</h3><p id="names1"></p></div>
+      <div class="t1"><h3>FATHER NAME </h3><p id="names2"></p></div>
+      <div class="t1"><h3>MOTHER NAME </h3><p id="names3"></p></div>
+  </div>
+  <div id="c1">
+      <div id="t2" style="text-align: center;font-size: larger;">
+          <b>ATTANDANCE DETAILS </b>
+      </div>
+          <canvas id="myChart" style="width:100%;height:550px;max-width:500px;max-height: 500PX;margin-left: 500px;"></canvas>
+  </div>
+  <div id="c2">
+      <div id="t3" style="text-align: center;font-size: larger;">
+        <b>MARKS DETAILS </b>
+      </div>
+      <div id="m1">
+          <canvas id="myChart2" style="width:100%;height:400px;max-width: 600px;max-height: 500PX;margin-left: 500px;"></canvas>
+          <canvas id="myChart3" style="width:100%;height:400px;max-width: 600px;max-height: 500PX;margin-left: 500px;"></canvas>
+      </div>
+  </div>
+<div id="c3">
+    <div id="t4" style="text-align: center;font-size: larger;">
+            <b>ACHIEVEMENTS</b>
+    </div>
+    <div id="output1">
+          <img id="i2">
+    </div><br>
+</div>
+</main>
+<footer>
+    <div id="f0">FOLLOW US ON <BR>SOCIAL MEDIA
+    </div><BR>
+    <div id="f">
+          <img src="images/facebook.png"  class="src">
+          <img src="images/twitter.png"  class="src">
+          <img src="images/youtube.jpg"  class="src">
+          <img src="images/instagram.jpg" class="src">
+    </div>
+    <div id="f1">
+          <p style="color: black;">CONTACT US -> </p>
+          <div>@1234567891</div>
+          <div>@987654321</div>
+          <div>@1559357121</div>
+    </div>
+</footer>
+</body>
+<script>
+window.onload = function()
+ {
+  var name=localStorage.getItem("firstname");
+  display(name);
+}
+
+function display(name)
+{
+  var gname=name;
+  const student={
+      A:[
+      {sname:"TOMMY123",photos:"./images/TOMMY123.jpg",fname:"TWINKLE",mname:"AMELIA",attandance:[70,30],marks1:[30,25, 20, 22, 21, 19,16],marks2:[30,26, 25, 25, 25, 25,16],achivements:["./achivements/TOMMY/1.jpg"]},
+    {sname:"SCHINCHAN12",photos:"./images/SCHINCHAN12.jpg",fname:"DEMI DAVID",mname:"NAYA ROMERO",attandance:[65,35],marks1:[30,23, 26, 29, 28, 25,16],marks2:[30,30, 30, 22, 25, 28,16],achivements:"NO RECORD FOUND"},
+    {sname:"HARSHA123",photos:"./images/HARSHA123.jpg",fname:"JOES MORTON",mname:"KAIA EVANS",attandance:[60,40],marks1:[30,25, 20, 23, 22, 29,16],marks2:[30,26, 26, 26, 26, 25,16],achivements:"NO RECORD FOUND"},
+    {sname:"KIRAN123",photos:"./images/KIRAN123.jpg",fname:"PARKER",mname:"LENA MAYOER",attandance:[90,10],marks1:[30,30, 22, 23, 24, 25,16],marks2:[30,20, 25, 23, 25, 26,16],achivements:["./achivements/KIRAN/1.jpg"]},
+    {sname:"DAVID123",photos:"./images/DAVID123.jpg",fname:"ZAHARA CANO",mname:"REBEKA",attandance:[30,70],marks1:[30,20, 25, 23, 25, 26,16],marks2:[30,30, 22, 23, 24, 25,16],achivements:["./achivements/DAVID/1.jpg"]},
+    {sname:"BEN1234",photos:"./images/BEN1234.jpg",fname:"TERRY SHARP",mname:"GIANA MOON",attandance:[75,25],marks1:[30,26, 26, 26, 26, 25,16],marks2:[30,25, 20, 23, 22, 29,16],achivements:"NO RECORD FOUND"},
+    {sname:"ARUNA123",photos:"./images/ARUNA123.jpg",fname:"SKY NELSON",mname:"CANDY",attandance:[50,50],marks1:[30,30, 30, 22, 25, 28,16],marks2:[30,23, 26, 29, 28, 25,16],achivements:"NO RECORD FOUND"},
+    {sname:"LAKSHMI12",photos:"./images/LAKSHMI12.jpg",fname:"ADLEY KEITH",mname:"GREY FOREST",attandance:[40,60],marks1:[30,23, 26, 20, 29, 20,16],marks2:[30,22, 25, 22, 28, 26,16],achivements:"NO RECORD FOUND"},
+    {sname:"PRASAD123",photos:"./images/PRASAD123.jpg",fname:"MASON HESS",mname:"ELIAS",attandance:[85,15],marks1:[30,26, 25, 25, 25, 25,16],marks2:[30,25, 20, 22, 21, 19,16],achivements:"NO RECORD FOUND"},
+        ]
+      };
+    for(let i in student.A)
+    {  
+      if(gname==student.A[i].sname)
+      {
+        document.getElementById("names1").innerHTML=student.A[i].sname;
+        document.getElementById("hb0").innerHTML="WELCOME MR/MRS."+student.A[i].sname;
+        document.getElementById("names2").innerHTML=student.A[i].fname;
+        document.getElementById("names3").innerHTML=student.A[i].mname;
+		    document.getElementById("i1").setAttribute("src",""+student.A[i].photos);
+		    document.getElementById("i1").setAttribute("width","50");
+		    document.getElementById("i1").setAttribute("height","50");
+        document.getElementById("i2").setAttribute("src",""+student.A[i].achivements);
+        var yValues=student.A[i].attandance;
+          display1(yValues);
+       var marks1=student.A[i].marks1;
+       var marks2=student.A[i].marks2;
+          display2(marks1);
+          display3(marks2);
+       var achivements=student.A[i].achivements;
+          display4(achivements); 
+      }
+    }
+
+    return false;
+}
+function display1(yValues)
+{
+  var xValues = ["PRESENT", "ABSENT"];
+  var yValues = yValues;
+  var barColors = ["#00aba9","#b91d47"];
+  new Chart("myChart", {type: "pie",data:{labels: xValues,datasets: [{backgroundColor: barColors,data: yValues}]},options:{title: {display: true,text: "ATTANDANCE DETAILS"}}});
+  return false ;
+}
+
+function display2(marks1)
+{
+  var xValues = ["TOTAL MARKS","JAVA", "DBMS", "DMS", "CO", "P&S"];
+  var yValues = marks1;
+  var barColors = ["grey","red", "green","blue","orange","brown"];
+  new Chart("myChart2", {type: "bar",data: {labels: xValues,datasets: [{backgroundColor: barColors,data: yValues }]}, options: { legend: {display: false},title: {display: true,text: "MID 1"}}});
+  return false;
+}
+    
+function display3(marks2)
+{
+  var xValues = ["TOTAL MARKS","JAVA", "DBMS", "DMS", "CO", "P&S"];
+  var yValues = marks2;
+  var barColors = ["grey","red", "green","blue","orange","brown"];
+  new Chart("myChart3", {type: "bar",data: {labels: xValues,datasets: [{backgroundColor: barColors,data: yValues}]},options: {legend: {display: false},title: {display: true,text: "MID 2"}}});
+  return false;
+}
+
+function display4(achivements)
+{   
+  flag=0;
+  for(i in achivements)
+      {
+        flag=flag+1;
+      }
+  if(flag>1)
+      {
+      document.getElementById("output1").innerHTML=achivements;
+      }
+}
+    
+function display5()
+    {
+      window.location.href="Entry.html";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PORTAL</title>
+    <link rel="stylesheet" href="demo.css" class="css">
+</head>
+<body id="b">
+    <fieldset id="t">
+        <legend id="h"><h1 class="k">  STUDENT LOGIN PORTAL   </h1>
+        </legend>
+        <center>
+            <form >
+                <div><h1 class="k">ENTER THE USERNAME</h1>
+                    <select id="t1" style="border: 2px solid black;border-radius: 15px;width: 245px;margin-left: 13%;"><option>TOMMY123</option>
+                        <option>SCHINCHAN12</option>
+                        <option>HARSHA123</option>
+                        <option>KIRAN123</option>
+                        <option>DAVID123</option>
+                        <option>BEN1234</option>
+                        <option>ARUNA123</option>
+                        <option>LAKSHMI12</option>
+                        <option>PRASAD123</option>
+                    </select><br>
+                </div>
+            <div>
+                <h1 class="k">ENTER THE PASSWORD</h1><input type="text" id="t2" placeholder="ENTER THE PASSWORD"><br>
+            </div>
+                <button id="t3" onclick="return display()">SUBMIT</button>
+            </form>
+                <p id="output"></p>
+        </center>
+    </fieldset>
+</body>
+<script>
+function display()
+{
+    uname=document.getElementById("t1").value;
+    upass=document.getElementById("t2").value;
+    flag=0;
+    names=["TOMMY123","SCHINCHAN12","HARSHA123","KIRAN123","DAVID123","BEN1234","ARUNA123","LAKSHMI12","PRASAD123"];
+    passwords=["TOMMY@123","SCHINCHAN@12","HARSHA@123","KIRAN@123","DAVID@123","BEN@1234","ARUNA@123","LAKSHMI@12","PRASAD@123"];
+    if(uname.length<1 || upass.length<1)
+    {
+        window.alert("ENTER THE USERNAME ANDPASSWORD ");
+    }
+    else
+    {
+        if(uname.length<6 || uname.length>12 && upass.length<6 || upass.length>12)
+        {
+            window.alert("USERNAME AND PASSWORD MUST BE BETWEEN 6 TO 12 CHARACTERS ONLY");
+        }
+        else
+        { 
+            for(i in names)
+            {
+                if(uname==names[i] && upass==passwords[i])
+                {
+                    flag=flag+1;
+                }
+            }
+            if(flag==0)
+            {
+                window.alert("please enter valid user id and password");
+            }
+            else
+            {
+                localStorage.setItem("firstname", uname);
+                window.location.href = "student.html";
+            }
+        }
+                
+    }
+    return false;
+}
+</script>
+</html>

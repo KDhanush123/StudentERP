@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOME</title>
+    <style>
+    /* body style */
+        #b
+        {
+            height: 100vh;
+        background-image:url(images/ENTRY.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0%;
+        background-attachment: fixed;
+        }
+    /*details alignment*/
+        #l
+        {
+            margin-top: 20%;
+            margin-bottom: 10%;
+            margin-left: 60%;
+            margin-right: 10%;
+        }
+    /* REDIRECT BUTTONS*/
+        button
+        {
+            size: 500px;
+            color: aqua;
+            background-color: rgb(126, 42, 165);
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            text-shadow:1px 1px 1px white,1px 1px 1px white;
+            font-family: 'Libre Baskerville', serif;
+        }
+    </style>
+</head>
+<body id="b">
+    <ul id="l">
+        <li><button><h1>HOME</h1></button>
+        <li><button onclick="return dsiplay()"><h1>lOGIN</h1></button></li>
+        <li><BUTTON><h1>SIGN-UP</h1></BUTTON></li>
+        <li><button><h1>DETAILS</h1></button></li>
+        <li><button><h1>CONTACT US</h1></button></li>
+    </ul>
+</body>
+<script>
+    function dsiplay()
+    {
+        window.location="Entry.html";
+        return false;
+    }
+</script>
+</html>
