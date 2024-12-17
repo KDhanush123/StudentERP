@@ -15,43 +15,45 @@
     padding: 0;
     margin: 0;
     height: 100vh;
+    background-color: #f4f7fa; /* Light grayish background to give a clean, professional feel */
 }
 
 /* Header */
 header {
-    background-color: #B3E5BE;
+    background-color: #34495e; /* Dark Slate Blue - professional and trustworthy color */
     height: 70px;
     padding: 10px 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    color: black;
+    color: #ecf0f1; /* Light gray color for the heading text */
     font-size: 1.8em;
     text-align: center;
-    text-shadow: 1px 1px 1px white, 1px 1px 2px white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     margin: 0;
 }
 
 #hb0 {
     float: left;
     font-size: 1.2em;
-    text-shadow: 1px 1px 1px white, 1px 1px 2px white;
+    color: #ecf0f1;
 }
 
 #hb1 {
-    background-color: aquamarine;
+    background-color: #16a085; /* Teal accent color */
     font-size: 1.2em;
     padding: 10px 20px;
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 2px solid #1abc9c;
+    border-radius: 5px;
     cursor: pointer;
     float: right;
     transition: background-color 0.3s ease;
+    color: #ecf0f1;
 }
 
 #hb1:hover {
-    background-color: #A0E7E5;
+    background-color: #1abc9c; /* Darker teal on hover */
 }
 
 /* Header Navigation */
@@ -61,8 +63,8 @@ header h1 {
 }
 
 #hum button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #95a5a6; /* Muted gray for buttons */
+    color: #ffffff;
     padding: 10px 20px;
     margin: 0 5px;
     border: none;
@@ -73,7 +75,7 @@ header h1 {
 }
 
 #hum button:hover {
-    background-color: #45a049;
+    background-color: #7f8c8d; /* Darker gray on hover */
 }
 
 #hum a {
@@ -83,9 +85,11 @@ header h1 {
 
 /* Details Section */
 #t {
-    background-color: #DADDB1;
+    background-color: #ffffff; /* Clean white background */
     padding: 30px;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .t1 {
@@ -94,12 +98,13 @@ header h1 {
     padding: 15px;
     margin: 10px;
     text-align: center;
-    color: rgb(147, 18, 117);
+    color: #2c3e50; /* Dark blue-gray for text */
     font-size: 1.2em;
 }
 
 .t1 h3 {
     font-size: 1.5em;
+    color: #2980b9; /* Soft blue for headings */
 }
 
 #names1, #names2, #names3 {
@@ -109,7 +114,7 @@ header h1 {
 
 img {
     float: right;
-    border: 3px solid rebeccapurple;
+    border: 3px solid #bdc3c7; /* Soft gray border for images */
     border-radius: 50%;
     height: 200px;
     width: 200px;
@@ -123,13 +128,14 @@ img {
 }
 
 #c1, #c2 {
-    background-color: #ABC4AA;
+    background-color: #ecf0f1; /* Light gray background for chart sections */
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #c3 {
-    background-color: #D6C7AE;
+    background-color: #f4f6f7; /* Slightly off-white for a lighter feel */
 }
 
 #myChart, #myChart2, #myChart3 {
@@ -139,9 +145,9 @@ img {
 
 /* Footer */
 footer {
-    background-color: #B99470;
+    background-color: #2c3e50; /* Dark blue-gray for a strong, professional footer */
     height: 200px;
-    color: black;
+    color: #ecf0f1; /* Light gray text in footer */
     padding: 20px;
     text-align: center;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
@@ -165,7 +171,7 @@ footer #f0 {
 }
 
 #f1 {
-    color: red;
+    color: #f39c12; /* Accent gold color for contact info */
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 10px;
